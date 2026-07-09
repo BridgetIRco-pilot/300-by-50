@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>300 by 50 — Brett's Training &amp; Nutrition Command Centre</title>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="300 by 50">
+<meta name="theme-color" content="#0f1115">
+<meta name="mobile-web-app-capable" content="yes">
+<link rel="apple-touch-icon" href="data:image/png;base64,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">
+<link rel="icon" type="image/png" href="data:image/png;base64,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">
+
+<style>
+  :root{
+    --bg:#0f1115; --panel:#171a21; --panel2:#1d212b; --border:#2a2f3a;
+    --red:#c0392b; --gold:#d4a94c; --text:#e8e6e1; --muted:#9aa0ac; --green:#4caf7d;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--text);}
+  header{background:linear-gradient(135deg,#1a1d24,#26140f 140%);border-bottom:2px solid var(--red);padding:22px 26px;}
+  header h1{margin:0;font-size:1.6rem;letter-spacing:.5px;}
+  header h1 span{color:var(--gold);}
+  header p{margin:4px 0 0;color:var(--muted);font-size:.92rem;}
+  .countdown-bar{display:flex;gap:18px;flex-wrap:wrap;margin-top:14px;}
+  .cbox{background:var(--panel);border:1px solid var(--border);border-radius:8px;padding:10px 16px;min-width:100px;text-align:center;}
+  .cbox b{display:block;font-size:1.4rem;color:var(--gold);}
+  .cbox span{font-size:.72rem;color:var(--muted);text-transform:uppercase;letter-spacing:.5px;}
+  nav{display:flex;gap:2px;background:var(--panel);border-bottom:1px solid var(--border);overflow-x:auto;position:sticky;top:0;z-index:10;}
+  nav button{background:none;border:none;color:var(--muted);padding:14px 18px;cursor:pointer;font-size:.9rem;font-weight:600;border-bottom:3px solid transparent;white-space:nowrap;}
+  nav button:hover{color:var(--text);}
+  nav button.active{color:var(--gold);border-bottom:3px solid var(--red);}
+  main{max-width:960px;margin:0 auto;padding:24px 20px 60px;}
+  section{display:none;}
+  section.active{display:block;animation:fade .25s ease;}
+  @keyframes fade{from{opacity:0;transform:translateY(4px);}to{opacity:1;transform:translateY(0);}}
+  h2{color:var(--gold);border-bottom:1px solid var(--border);padding-bottom:8px;font-size:1.25rem;}
+  h3{color:var(--text);font-size:1.05rem;margin-top:26px;}
+  .card{background:var(--panel);border:1px solid var(--border);border-radius:10px;padding:18px 20px;margin-bottom:16px;}
+  .card.phase-active{border-color:var(--red);box-shadow:0 0 0 1px var(--red) inset;}
+  table{width:100%;border-collapse:collapse;margin:12px 0;font-size:.9rem;}
+  th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--border);}
+  th{color:var(--gold);font-size:.78rem;text-transform:uppercase;letter-spacing:.4px;}
+  .tag{display:inline-block;background:var(--panel2);border:1px solid var(--border);border-radius:20px;padding:3px 11px;font-size:.75rem;color:var(--muted);margin:2px 4px 2px 0;}
+  .badge-red{background:rgba(192,57,43,.2);color:#e07a6c;border-color:var(--red);}
+  .badge-gold{background:rgba(212,169,76,.15);color:var(--gold);border-color:var(--gold);}
+  .badge-green{background:rgba(76,175,125,.15);color:var(--green);border-color:var(--green);}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+  @media(max-width:640px){.grid2{grid-template-columns:1fr;}}
+  label{display:block;font-size:.8rem;color:var(--muted);margin-bottom:4px;margin-top:12px;}
+  input[type=number],input[type=date],select,textarea{width:100%;background:var(--panel2);border:1px solid var(--border);color:var(--text);padding:9px 10px;border-radius:6px;font-size:.95rem;}
+  input[type=range]{width:100%;}
+  button.btn{background:var(--red);color:#fff;border:none;padding:11px 20px;border-radius:6px;font-weight:600;cursor:pointer;margin-top:16px;font-size:.9rem;}
+  button.btn:hover{background:#a83226;}
+  button.btn.secondary{background:var(--panel2);border:1px solid var(--border);color:var(--text);}
+  .link-row a{color:var(--gold);text-decoration:none;font-size:.85rem;}
+  .link-row a:hover{text-decoration:underline;}
+  .muted{color:var(--muted);font-size:.85rem;}
+  .warn{background:rgba(212,169,76,.08);border:1px solid var(--gold);border-radius:8px;padding:12px 14px;font-size:.85rem;color:#e6d5a8;margin:14px 0;}
+  .streak{font-size:2rem;color:var(--gold);font-weight:700;}
+  #chart{width:100%;height:220px;background:var(--panel2);border-radius:8px;border:1px solid var(--border);}
+  .hist-row button{background:none;border:none;color:#c0392b;cursor:pointer;font-size:.9rem;}
+  .footer-note{text-align:center;color:var(--muted);font-size:.78rem;margin-top:40px;}
+  .profile-switch{display:flex;gap:8px;margin-top:12px;}
+  .profile-switch button{background:var(--panel);border:1px solid var(--border);color:var(--muted);padding:6px 16px;border-radius:20px;font-size:.82rem;font-weight:600;cursor:pointer;}
+  .profile-switch button.active{background:var(--red);border-color:var(--red);color:#fff;}
+  .checklist{list-style:none;padding:0;margin:10px 0;}
+  .checklist li{padding:6px 0;border-bottom:1px dashed var(--border);font-size:.92rem;}
+  .checklist li b{color:var(--gold);}
+  .box{font-family:monospace;margin-right:8px;}
+  #printBtn{margin-top:0;}
+  .shop-cat{margin-top:22px;}
+  .shop-cat h4{color:var(--gold);font-size:.85rem;text-transform:uppercase;letter-spacing:.5px;margin:0 0 6px;}
+  .shop-item{display:flex;align-items:center;gap:10px;padding:6px 0;border-bottom:1px dashed var(--border);font-size:.92rem;}
+  .shop-item .box{font-family:monospace;}
+  .shop-item .count{margin-left:auto;color:var(--muted);font-size:.78rem;}
+  @media print{
+    nav, header .countdown-bar, .footer-note, .no-print{display:none !important;}
+    section{display:none !important;}
+    section.active{display:block !important;}
+    body, section.active .card{background:#fff !important;color:#000 !important;}
+    section.active h2, section.active h3, section.active .streak, section.active h4{color:#000 !important;}
+    section.active th{color:#000 !important;}
+    section.active .card{border:1px solid #000 !important;box-shadow:none !important;}
+    section.active .muted, section.active .count{color:#333 !important;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>300 <span>by</span> 50</h1>
+  <p id="headerSubtitle"></p>
+  <div class="profile-switch" id="profileSwitch"></div>
+  <div class="countdown-bar" id="countdownBar"></div>
+</header>
+
+<nav id="tabs">
+  <button data-tab="today" class="active">Today's Sheet</button>
+  <button data-tab="dashboard">Dashboard</button>
+  <button data-tab="training">Training</button>
+  <button data-tab="nutrition">Nutrition</button>
+  <button data-tab="shopping">Shopping List</button>
+  <button data-tab="supplements">Supplements</button>
+  <button data-tab="checkin">Daily Check-In</button>
+  <button data-tab="progress">Progress</button>
+</nav>
+
+<main>
+
+  <!-- TODAY -->
+  <section id="today" class="active">
+    <h2>Today's Sheet</h2>
+    <button class="btn secondary no-print" onclick="window.print()">🖨 Print this sheet</button>
+    <div id="todayContent"></div>
+  </section>
+
+  <!-- DASHBOARD -->
+  <section id="dashboard">
+    <h2>Mission Brief</h2>
+    <div class="card">
+      <p>Shared goal: arrive at 25 Feb 2027 — Brett's 50th — in the best shape either of you have been in for years, without burning out in month one. This is a <b>body recomposition</b>, not a crash diet: build visible muscle while stripping fat, sharing the same kettlebell strength days and meal calendar so your diets stay aligned — but each of you conditions your own way (see the Training tab: Brett's on sledgehammer/road-bike sprints, Leyla's on casual road running). No gym required. Use the switcher above to flip between profiles — each of you gets your own weight, targets and check-in history.</p>
+      <div class="grid2">
+        <div>
+          <label>Current weight (kg)</label>
+          <input type="number" id="curWeight" value="87" step="0.1">
+        </div>
+        <div>
+          <label>Target weight by 25 Feb 2027 (kg)</label>
+          <input type="number" id="goalWeight" value="80" step="0.1">
+        </div>
+      </div>
+      <p class="muted" id="rateNote"></p>
+    </div>
+
+    <div class="card" id="phaseCard">
+      <h3 style="margin-top:0">Current Phase</h3>
+      <div id="phaseInfo"></div>
+    </div>
+
+    <div class="card">
+      <h3 style="margin-top:0">The Four Phases</h3>
+      <table>
+        <tr><th>Phase</th><th>Dates</th><th>Focus</th></tr>
+        <tr><td>1 · Foundation</td><td>10 Jul – 20 Aug 2026 (6 wks)</td><td>Rebuild movement quality, establish habits, moderate deficit, 1×/wk sprints</td></tr>
+        <tr><td>2 · Build</td><td>21 Aug – 12 Nov 2026 (12 wks)</td><td>Progressive overload on kettlebell/hammer work, muscle accrual, 2×/wk sprints</td></tr>
+        <tr><td>3 · Peak Conditioning</td><td>13 Nov 2026 – 21 Jan 2027 (10 wks)</td><td>Higher density circuits, carb cycling tightened, 3×/wk sprints</td></tr>
+        <tr><td>4 · Sharpen &amp; Arrive</td><td>22 Jan – 25 Feb 2027 (5 wks)</td><td>Maintain intensity, manage fatigue, polish conditioning, arrive sharp</td></tr>
+      </table>
+    </div>
+
+    <div class="warn">This tool gives general fitness/nutrition guidance based on current mainstream sports-science practice — it isn't personalised medical advice. If either of you has any injuries, health conditions, or takes medication, check with a doctor before starting, especially before introducing ashwagandha or any new supplement.</div>
+  </section>
+
+  <!-- TRAINING -->
+  <section id="training">
+    <h2>Training Program</h2>
+    <div id="trainingContent"></div>
+  </section>
+
+  <!-- NUTRITION -->
+  <section id="nutrition">
+    <h2>Nutrition Plan — Two Meals a Day</h2>
+    <p class="muted">Built around a midday + evening eating window, Woolworths as primary supplier, and your Blesbok steaks/mince/patties as the anchor protein. Protein stays constant every day; carbs and calories flex with training.</p>
+
+    <div class="card">
+      <h3 style="margin-top:0">Your Targets (auto-calculated)</h3>
+      <div id="nutritionCalc"></div>
+    </div>
+
+    <h3>How the two meals work</h3>
+    <table>
+      <tr><th>Meal</th><th>Timing</th><th>Role</th></tr>
+      <tr><td>Meal 1</td><td>Midday</td><td>Bigger meal — protein + carbs to fuel the day/training</td></tr>
+      <tr><td>Meal 2</td><td>Evening</td><td>Protein + veg, carbs scaled to whether you trained that day</td></tr>
+      <tr><td>Optional top-up</td><td>Around training</td><td>Protein shake or biltong if you're short of your daily protein target</td></tr>
+    </table>
+
+    <h3>Meal 1 ideas (Blesbok-forward)</h3>
+    <ul>
+      <li><b>Blesbok steak, sweet potato mash, greens</b> — 200g Blesbok steak, 1 Woolworths sweet potato, broccoli/green beans, olive oil</li>
+      <li><b>Blesbok mince rice bowl</b> — 250g mince, basmati or jasmine rice, Woolworths stir-fry veg mix, soy or peri-peri</li>
+      <li><b>Blesbok patties + baby potatoes</b> — 2 patties, Woolworths baby potatoes, mixed salad, feta</li>
+      <li><b>Woolworths salmon + quinoa + asparagus</b> — omega-3 rotation day</li>
+      <li><b>Peri-peri chicken breast + roast veg</b> — Woolworths flame-grilled chicken option for a no-prep day</li>
+    </ul>
+
+    <h3>Meal 2 ideas</h3>
+    <ul>
+      <li><b>Blesbok mince chilli or bolognese</b> — mince, Woolworths canned tomatoes/beans, wholewheat pasta or brown rice (skip the carb on rest days)</li>
+      <li><b>Blesbok stir-fry</b> — steak strips, Woolworths frozen stir-fry veg, ginger/garlic/soy</li>
+      <li><b>4-egg omelette + avo + rye toast</b> — light night, high protein, minimal effort</li>
+      <li><b>Greek yoghurt + berries + mixed nuts + honey</b> — recovery-style light dinner</li>
+      <li><b>Woolworths high-protein ready meal</b> — for genuinely no-time nights (check their "high in protein" range)</li>
+    </ul>
+
+    <h3>Snacks / protein top-ups</h3>
+    <p class="muted">Biltong (Woolworths deli counter) is your best friend here — no prep, no cooking, ~40g protein per 100g, and very low carb. Boiled eggs and a scoop of whey are the other two fallbacks when you're short of target.</p>
+
+    <h3>Shop the current Woolworths range</h3>
+    <div class="link-row">
+      <p><a href="https://www.woolworths.co.za/browse/food" target="_blank">Woolworths — Food homepage →</a></p>
+    </div>
+    <p class="muted">Woolworths' category links use search-index codes that shift over time, so deep links to specific aisles tend to break silently — this homepage link is the one we've verified stays reliable. Once there, use their search bar for "high protein", "biltong", or whatever you need that day — it'll show this week's actual stock, prices and specials.</p>
+  </section>
+
+  <!-- SHOPPING LIST -->
+  <section id="shopping">
+    <h2>Shopping List</h2>
+    <button class="btn secondary no-print" onclick="window.print()">🖨 Print this list</button>
+    <p class="muted">A rolling 7-day look-ahead so you can plan one Woolworths run instead of daily trips. Updates automatically as the days roll forward.</p>
+
+    <div class="card">
+      <h3 style="margin-top:0">Meals This Week</h3>
+      <table id="weekMealsTable"><thead><tr><th>Day</th><th>Meal 1 (midday)</th><th>Meal 2 (evening)</th></tr></thead><tbody></tbody></table>
+    </div>
+
+    <div class="card">
+      <h3 style="margin-top:0">Shopping List (next 7 days)</h3>
+      <div id="shoppingListContent"></div>
+    </div>
+  </section>
+
+  <!-- SUPPLEMENTS -->
+  <section id="supplements">
+    <h2>Supplement Stack</h2>
+    <p class="muted">Comprehensive stack, evidence-ranked. Training and sleep will always outweigh supplements — this is optimisation on top of the work, not a substitute for it.</p>
+    <table>
+      <tr><th>Supplement</th><th>Dose</th><th>Timing</th><th>Why</th></tr>
+      <tr><td><b>Creatine monohydrate</b></td><td>5g/day</td><td>Any time, consistency matters more than timing</td><td>The single best-evidenced supplement for strength/muscle at any age; timing doesn't matter, daily consistency does</td></tr>
+      <tr><td>Whey or protein isolate</td><td>1–2 scoops as needed</td><td>Post-training or to hit daily protein target</td><td>Convenient way to close the gap on ~170-190g/day protein target from 2 meals</td></tr>
+      <tr><td>Omega-3 (fish oil)</td><td>2–3g combined EPA/DHA</td><td>With a meal</td><td>Joint health, recovery, cardiovascular support</td></tr>
+      <tr><td>Vitamin D3 (+K2)</td><td>2,000–4,000 IU</td><td>Morning with food (fat-soluble)</td><td>Very commonly low even in sunny climates; supports testosterone, bone and immune health</td></tr>
+      <tr><td>Magnesium glycinate</td><td>300–400mg</td><td>Evening</td><td>Sleep quality and muscle recovery — sleep affects testosterone more than any supplement on this list</td></tr>
+      <tr><td>Zinc</td><td>15–30mg</td><td>Evening, away from calcium/dairy</td><td>Corrects deficiency-driven low testosterone (won't push above normal)</td></tr>
+      <tr><td>Ashwagandha (KSM-66)</td><td>600mg/day</td><td>Morning or split AM/PM</td><td>Modest but real evidence for stress reduction and 8–15% testosterone increase in some trials</td></tr>
+      <tr><td>Collagen peptides + vitamin C</td><td>10–15g collagen + 50mg vit C</td><td>30–60 min before training</td><td>Supports tendon/joint resilience — relevant given sledgehammer and kettlebell ballistic loads</td></tr>
+      <tr><td>Electrolytes</td><td>As labelled</td><td>On sprint/hammer days</td><td>Replaces sodium/potassium lost in high-intensity sessions, especially useful in SA heat</td></tr>
+      <tr><td>Beta-alanine (optional)</td><td>3–5g/day</td><td>Any time (harmless tingling is normal)</td><td>Helps repeated high-intensity efforts (30sec–3min) — relevant for your circuit/sprint work</td></tr>
+    </table>
+    <div class="warn">Ashwagandha and some testosterone-support ingredients can interact with thyroid, blood pressure or immunosuppressant medication, and aren't recommended during pregnancy or breastfeeding. If you're on any prescription medication or have a health condition, check with a pharmacist or doctor before starting ashwagandha specifically.</div>
+  </section>
+
+  <!-- CHECK-IN -->
+  <section id="checkin">
+    <h2>Daily Check-In</h2>
+    <p class="muted">Takes 30 seconds. Consistency here matters more than any single day's number.</p>
+    <div class="card">
+      <label>Date</label>
+      <input type="date" id="ciDate">
+      <label>Weight (kg)</label>
+      <input type="number" id="ciWeight" step="0.1" placeholder="e.g. 86.4">
+      <label>Sleep (hours)</label>
+      <input type="number" id="ciSleep" step="0.5" placeholder="e.g. 7">
+      <label>Energy today (1 = wrecked, 5 = great)</label>
+      <input type="range" id="ciEnergy" min="1" max="5" value="3">
+      <label>Session done</label>
+      <select id="ciSession"></select>
+      <label>Followed the nutrition plan?</label>
+      <select id="ciMeals">
+        <option>Yes, on plan</option>
+        <option>Mostly</option>
+        <option>No, off plan</option>
+      </select>
+      <label>Notes (optional)</label>
+      <textarea id="ciNotes" rows="2" placeholder="How did it feel?"></textarea>
+      <button class="btn" onclick="saveCheckin()">Save Check-In</button>
+    </div>
+
+    <div class="card">
+      <h3 style="margin-top:0">Current Streak</h3>
+      <div class="streak" id="streakNum">0 days</div>
+      <p class="muted">Consecutive days logged (including rest days you record).</p>
+    </div>
+
+    <div class="card">
+      <h3 style="margin-top:0">History</h3>
+      <table id="histTable"><thead><tr><th>Date</th><th>Wt</th><th>Sleep</th><th>Energy</th><th>Session</th><th>Meals</th><th></th></tr></thead><tbody></tbody></table>
+    </div>
+  </section>
+
+  <!-- PROGRESS -->
+  <section id="progress">
+    <h2>Progress</h2>
+    <div class="card">
+      <h3 style="margin-top:0">Weight Trend</h3>
+      <canvas id="chart"></canvas>
+      <p class="muted">Scale weight is one signal, not the whole story — expect it to move slowly some weeks (especially Phase 2) while you're visibly changing shape from the muscle you're building. Judge progress by photos, how clothes fit and sprint/lift performance too, not the scale alone.</p>
+    </div>
+    <div class="card">
+      <h3 style="margin-top:0">Snapshot</h3>
+      <div id="snapshot"></div>
+    </div>
+  </section>
+
+</main>
+
+<p class="footer-note">300 by 50 — built for Brett &amp; Leyla · Each profile's data stays in whichever browser it was entered on (localStorage), never sent anywhere.</p>
+
+<script>
+// Parse YYYY-MM-DD as a LOCAL midnight date (not UTC) so day-counting lines up
+// with the user's actual local calendar day, regardless of timezone/time-of-day.
+function parseLocalDate(str){
+  const [y,m,d] = str.split('-').map(Number);
+  return new Date(y, m-1, d);
+}
+function todayLocal(){
+  const d = new Date();
+  d.setHours(0,0,0,0);
+  return d;
+}
+
+const PROGRAM_START = parseLocalDate('2026-07-10');
+const GOAL_DATE = parseLocalDate('2027-02-25');
+const PHASES = [
+  {name:'Phase 1 · Foundation', start:'2026-07-10', end:'2026-08-20', focus:'Rebuild movement quality, establish habits, moderate deficit, 1×/wk sprints. 5 sessions/week is fine while habits form.'},
+  {name:'Phase 2 · Build', start:'2026-08-21', end:'2026-11-12', focus:'Progressive overload on kettlebell/hammer work, muscle accrual, 2×/wk sprints. Full 6-day split.'},
+  {name:'Phase 3 · Peak Conditioning', start:'2026-11-13', end:'2027-01-21', focus:'Higher-density circuits, carbs cycled tighter, 3×/wk sprints.'},
+  {name:'Phase 4 · Sharpen & Arrive', start:'2027-01-22', end:'2027-02-25', focus:'Maintain intensity, manage fatigue, polish conditioning. Arrive sharp on the day.'}
+];
+
+function daysBetween(a,b){return Math.round((b-a)/86400000);}
+
+// --- Profiles ---
+const PROFILES = {
+  brett: {key:'brett', label:'Brett', height:179, age:49, sex:'male', defaultWeight:87, defaultGoal:80},
+  leyla: {key:'leyla', label:'Leyla', height:168, age:42, sex:'female', defaultWeight:58, defaultGoal:54}
+};
+const PROFILE_STORAGE_KEY = 'activeProfile_300by50';
+function getActiveProfile(){
+  const v = localStorage.getItem(PROFILE_STORAGE_KEY);
+  return PROFILES[v] ? v : 'brett';
+}
+function weightStorageKey(){ return 'curWeight_300by50_'+getActiveProfile(); }
+function goalStorageKey(){ return 'goalWeight_300by50_'+getActiveProfile(); }
+function checkinsStorageKey(){ return 'checkins_300by50_'+getActiveProfile(); }
+function loadStoredWeight(){
+  const v = localStorage.getItem(weightStorageKey());
+  return v!==null ? v : String(PROFILES[getActiveProfile()].defaultWeight);
+}
+function loadStoredGoal(){
+  const v = localStorage.getItem(goalStorageKey());
+  return v!==null ? v : String(PROFILES[getActiveProfile()].defaultGoal);
+}
+function migrateLegacyData(){
+  const legacy = localStorage.getItem('checkins_300by50');
+  if(legacy && !localStorage.getItem('checkins_300by50_brett')){
+    localStorage.setItem('checkins_300by50_brett', legacy);
+  }
+}
+function renderProfileSwitch(){
+  const active = getActiveProfile();
+  document.getElementById('profileSwitch').innerHTML = Object.values(PROFILES).map(p=>
+    `<button class="${p.key===active?'active':''}" onclick="switchProfile('${p.key}')">${p.label}</button>`
+  ).join('');
+  document.getElementById('headerSubtitle').textContent =
+    `${PROFILES[active].label} · ${PROFILES[active].height}cm · shared challenge, delivered by 25 Feb 2027`;
+}
+function switchProfile(key){
+  if(!PROFILES[key]) return;
+  localStorage.setItem(PROFILE_STORAGE_KEY, key);
+  document.getElementById('curWeight').value = loadStoredWeight();
+  document.getElementById('goalWeight').value = loadStoredGoal();
+  renderAll();
+}
+function renderAll(){
+  renderProfileSwitch();
+  renderCountdown();
+  renderPhase();
+  renderRateNote();
+  renderNutrition();
+  renderTrainingTab();
+  renderCheckinOptions();
+  renderHistory();
+  renderStreak();
+  renderToday();
+  renderShopping();
+  if(document.getElementById('progress').classList.contains('active')) renderChart();
+}
+
+// --- Today's Sheet data (per profile — training styles differ) ---
+const WEEKDAY_SESSIONS_BRETT = [
+  {name:'Rest / Active Recovery', training:false, tag:'Sunday'},
+  {name:'Kettlebell Strength A', training:true, tag:'Monday', detail:'Swings, goblet squats, single-arm press, rows, pull-ups'},
+  {name:'Wind Sprints + Core', training:true, tag:'Tuesday', sprint:true, detail:'Road bike or hammer sprints, hanging leg raises, plank'},
+  {name:'Kettlebell Strength B', training:true, tag:'Wednesday', detail:'Snatches, Turkish get-ups, rear-foot lunges, push-ups'},
+  {name:'Sledgehammer + Rope Conditioning', training:true, tag:'Thursday', detail:'Tyre slams, rotational strikes, skipping intervals', phase1Optional:true},
+  {name:'Full-Body Complex', training:true, tag:'Friday', detail:'EMOM kettlebell complex, pull-up/push-up ladders'},
+  {name:'Wind Sprints (road bike) + Mobility', training:true, tag:'Saturday', sprint:true, detail:'Short sprint set on the road bike, hips/shoulders mobility flow'}
+];
+const WEEKDAY_SESSIONS_LEYLA = [
+  {name:'Rest / Active Recovery', training:false, tag:'Sunday'},
+  {name:'Kettlebell Strength A', training:true, tag:'Monday', detail:'Swings, goblet squats, single-arm press, rows, pull-ups'},
+  {name:'Easy Road Run + Core', training:true, tag:'Tuesday', run:true, detail:'20–30 min easy, conversational pace, then core (planks, leg raises)'},
+  {name:'Kettlebell Strength B', training:true, tag:'Wednesday', detail:'Snatches, Turkish get-ups, rear-foot lunges, push-ups'},
+  {name:'Steady Road Run + Mobility', training:true, tag:'Thursday', run:true, detail:'30–40 min steady pace, hips/shoulders mobility after', phase1Optional:true},
+  {name:'Full-Body Complex', training:true, tag:'Friday', detail:'EMOM kettlebell complex, pull-up/push-up ladders'},
+  {name:'Long Casual Run', training:true, tag:'Saturday', run:true, detail:'40–50 min relaxed long run, whatever pace feels good — your weekly long one'}
+];
+const WEEKDAY_SESSIONS_BY_PROFILE = {brett: WEEKDAY_SESSIONS_BRETT, leyla: WEEKDAY_SESSIONS_LEYLA};
+const SPRINT_PROTOCOLS = [
+  {name:'Bike sprints', format:'10 × 20 sec all-out / 40 sec easy spin — on the road bike, find a flat, quiet stretch of road or a park loop'},
+  {name:'Tyre slams', format:'10 × 30 sec max-effort slams / 30 sec rest'},
+  {name:'Rope bursts', format:'10 × 30 sec max-speed skip / 30 sec rest'},
+  {name:'Micro-sprints', format:'8–10 × 6 sec all-out / 60 sec easy spin, same quiet stretch of road — Phase 1 friendly'}
+];
+const MEAL1_IDEAS = [
+  {name:'Blesbok steak, sweet potato mash, greens', detail:'200g steak, sweet potato, broccoli/green beans, olive oil',
+   ingredients:[{name:'Blesbok steak (200g)',cat:'meat'},{name:'Sweet potato',cat:'produce'},{name:'Broccoli or green beans',cat:'produce'},{name:'Olive oil',cat:'pantry'}]},
+  {name:'Blesbok mince rice bowl', detail:'250g mince, basmati rice, Woolworths stir-fry veg, soy or peri-peri',
+   ingredients:[{name:'Blesbok mince (250g)',cat:'meat'},{name:'Basmati rice',cat:'pantry'},{name:'Woolworths stir-fry veg mix',cat:'produce'},{name:'Soy sauce or peri-peri sauce',cat:'pantry'}]},
+  {name:'Blesbok patties + baby potatoes', detail:'2 patties, baby potatoes, mixed salad, feta',
+   ingredients:[{name:'Blesbok patties (2)',cat:'meat'},{name:'Baby potatoes',cat:'produce'},{name:'Mixed salad',cat:'produce'},{name:'Feta cheese',cat:'dairy'}]},
+  {name:'Woolworths salmon + quinoa + asparagus', detail:'omega-3 rotation day',
+   ingredients:[{name:'Salmon fillets',cat:'meat'},{name:'Quinoa',cat:'pantry'},{name:'Asparagus',cat:'produce'}]},
+  {name:'Peri-peri chicken breast + roast veg', detail:'no-prep day',
+   ingredients:[{name:'Peri-peri chicken breast',cat:'meat'},{name:'Roast veg (butternut, carrot, onion)',cat:'produce'}]}
+];
+const MEAL2_IDEAS = [
+  {name:'Blesbok mince chilli/bolognese', detail:'canned tomatoes/beans, wholewheat pasta or brown rice (skip carb on rest days)',
+   ingredients:[{name:'Blesbok mince (250g)',cat:'meat'},{name:'Canned tomatoes',cat:'pantry'},{name:'Canned beans',cat:'pantry'},{name:'Wholewheat pasta or brown rice',cat:'pantry'}]},
+  {name:'Blesbok stir-fry', detail:'steak strips, frozen stir-fry veg, ginger/garlic/soy',
+   ingredients:[{name:'Blesbok steak strips',cat:'meat'},{name:'Woolworths stir-fry veg mix',cat:'produce'},{name:'Ginger',cat:'produce'},{name:'Garlic',cat:'produce'},{name:'Soy sauce',cat:'pantry'}]},
+  {name:'4-egg omelette + avo + rye toast', detail:'light night',
+   ingredients:[{name:'Eggs (4)',cat:'dairy'},{name:'Avocado',cat:'produce'},{name:'Rye bread',cat:'pantry'},{name:'Spinach',cat:'produce'}]},
+  {name:'Greek yoghurt + berries + mixed nuts + honey', detail:'recovery dinner',
+   ingredients:[{name:'Greek yoghurt',cat:'dairy'},{name:'Mixed berries',cat:'produce'},{name:'Mixed nuts',cat:'pantry'},{name:'Honey',cat:'pantry'}]},
+  {name:'Woolworths high-protein ready meal', detail:'no-time night',
+   ingredients:[{name:'Woolworths high-protein ready meal',cat:'pantry'}]}
+];
+const CATEGORY_LABELS = {meat:'Meat & Protein', produce:'Produce', pantry:'Pantry & Grains', dairy:'Dairy & Other'};
+const CATEGORY_ORDER = ['meat','produce','pantry','dairy'];
+const SUPPLEMENT_CHECKLIST = [
+  'Creatine monohydrate — 5g',
+  'Whey/protein — as needed to hit protein target',
+  'Omega-3 fish oil — 2–3g with a meal',
+  'Vitamin D3 (+K2) — morning with food',
+  'Magnesium glycinate — 300–400mg, evening',
+  'Zinc — 15–30mg, evening',
+  'Ashwagandha (KSM-66) — 600mg',
+  'Collagen + vitamin C — before training',
+  'Beta-alanine — 3–5g (optional)'
+];
+
+function computeNutritionTargets(){
+  const profile = PROFILES[getActiveProfile()];
+  const w = parseFloat(document.getElementById('curWeight').value)||profile.defaultWeight;
+  const bmrBase = 10*w + 6.25*profile.height - 5*profile.age;
+  const bmr = profile.sex==='female' ? bmrBase-161 : bmrBase+5;
+  return {
+    proteinLow: Math.round(w*1.8), proteinHigh: Math.round(w*2.2),
+    trainDay: Math.round(bmr*1.6), restDay: Math.round(bmr*1.35)
+  };
+}
+
+function renderToday(){
+  const now = todayLocal();
+  const dow = now.getDay(); // 0=Sun
+  const weekdaySessions = WEEKDAY_SESSIONS_BY_PROFILE[getActiveProfile()];
+  const session = weekdaySessions[dow];
+  const phase = currentPhase();
+  const dayNumRaw = daysBetween(PROGRAM_START, now)+1;
+  const dayNum = Math.max(dayNumRaw, 0);
+  const dayLabel = dayNumRaw < 1
+    ? (dayNumRaw === 0 ? 'Starts tomorrow' : `Starts in ${1-dayNumRaw} days`)
+    : `Day ${dayNumRaw} of program`;
+  const weekNum = Math.max(Math.ceil(Math.max(dayNum,1)/7), 1);
+  const t = computeNutritionTargets();
+  const isPhase1 = phase.name.startsWith('Phase 1');
+  const dateStr = now.toLocaleDateString('en-GB', {weekday:'long', year:'numeric', month:'long', day:'numeric'});
+
+  let sprintBlock = '';
+  if(session.sprint){
+    const proto = SPRINT_PROTOCOLS[weekNum % SPRINT_PROTOCOLS.length];
+    sprintBlock = `<div class="card"><h3 style="margin-top:0">Sprint Protocol</h3><p><b>${proto.name}</b> — ${proto.format}</p><p class="muted">Total time incl. warm-up/cooldown: 20–30 min. Electrolytes today.</p></div>`;
+  }
+  if(session.run){
+    sprintBlock = `<div class="card"><h3 style="margin-top:0">Run Notes</h3><p>Keep it conversational — you should be able to hold a chat. Comfortable, broken-in shoes, and plan your route. On the long Saturday run, take water and let someone know where you're headed.</p></div>`;
+  }
+
+  let phase1Note = '';
+  if(isPhase1 && session.phase1Optional){
+    phase1Note = `<p class="warn">Phase 1: this session is optional — keep it easy or take it as a rest day while habits bed in.</p>`;
+  }
+
+  const meal1 = MEAL1_IDEAS[dayNum % MEAL1_IDEAS.length];
+  const meal2 = MEAL2_IDEAS[dayNum % MEAL2_IDEAS.length];
+  const calTarget = session.training ? t.trainDay : t.restDay;
+  const meal1Text = meal1.name + (meal1.detail ? ' — '+meal1.detail : '');
+  const meal2Text = meal2.name + (meal2.detail ? ' — '+meal2.detail : '');
+
+  document.getElementById('todayContent').innerHTML = `
+    <div class="card">
+      <h3 style="margin-top:0">${dateStr} — ${PROFILES[getActiveProfile()].label}'s Sheet</h3>
+      <p><span class="tag badge-gold">${phase.name}</span> <span class="tag badge-red">${dayLabel}</span></p>
+    </div>
+    <div class="card">
+      <h3 style="margin-top:0">Session: ${session.name}</h3>
+      <p>${session.detail||''}</p>
+      ${phase1Note}
+    </div>
+    ${sprintBlock}
+    <div class="card">
+      <h3 style="margin-top:0">Nutrition Today (~${calTarget} kcal · ${t.proteinLow}–${t.proteinHigh}g protein)</h3>
+      <p><b>Meal 1 (midday):</b> ${meal1Text}</p>
+      <p><b>Meal 2 (evening):</b> ${meal2Text}</p>
+      <p class="muted">Short on protein? Biltong, boiled eggs or a whey shake close the gap.</p>
+    </div>
+    <div class="card">
+      <h3 style="margin-top:0">Supplement Checklist</h3>
+      <ul class="checklist">
+        ${SUPPLEMENT_CHECKLIST.map(s=>`<li><span class="box">☐</span>${s}</li>`).join('')}
+      </ul>
+    </div>
+    <div class="card">
+      <p class="muted">Log tonight's check-in on the Daily Check-In tab — that's what keeps your streak and progress chart alive.</p>
+    </div>
+  `;
+}
+
+function renderCountdown(){
+  const now = todayLocal();
+  const daysLeft = daysBetween(now, GOAL_DATE);
+  const weeksLeft = (daysLeft/7).toFixed(1);
+  const dayNum = daysBetween(PROGRAM_START, now)+1;
+  const dayText = dayNum < 1 ? (dayNum===0 ? 'Starts tomorrow' : `Starts in ${1-dayNum}d`) : dayNum;
+  document.getElementById('countdownBar').innerHTML = `
+    <div class="cbox"><b>${daysLeft}</b><span>Days to 50</span></div>
+    <div class="cbox"><b>${weeksLeft}</b><span>Weeks left</span></div>
+    <div class="cbox"><b>${dayNum < 1 ? dayText : 'Day '+dayNum}</b><span>Of the program</span></div>
+  `;
+}
+
+function currentPhase(){
+  const now = todayLocal();
+  for(const p of PHASES){
+    if(now >= parseLocalDate(p.start) && now <= parseLocalDate(p.end)) return p;
+  }
+  if(now < parseLocalDate(PHASES[0].start)) return PHASES[0];
+  return PHASES[PHASES.length-1];
+}
+
+function renderPhase(){
+  const p = currentPhase();
+  document.getElementById('phaseInfo').innerHTML = `<h3 style="margin-top:0">${p.name}</h3><p>${p.focus}</p><p class="muted">${p.start} → ${p.end}</p>`;
+}
+
+function renderRateNote(){
+  const cur = parseFloat(document.getElementById('curWeight').value)||87;
+  const goal = parseFloat(document.getElementById('goalWeight').value)||80;
+  const weeksLeft = Math.max(daysBetween(todayLocal(),GOAL_DATE)/7, 1);
+  const diff = cur-goal;
+  const rate = (diff/weeksLeft).toFixed(2);
+  document.getElementById('rateNote').textContent = diff>0
+    ? `That's ${diff.toFixed(1)}kg over ${weeksLeft.toFixed(0)} weeks — about ${rate}kg/week. Slow and steady; muscle gain will offset some of the scale movement, which is the point.`
+    : `Your goal is at or above current weight — this plan will read as recomposition (adding muscle) rather than pure weight loss.`;
+}
+
+function renderTrainingTab(){
+  const profile = getActiveProfile();
+  const sessions = WEEKDAY_SESSIONS_BY_PROFILE[profile];
+  const order = [1,2,3,4,5,6,0]; // Mon..Sun display order (array is Sun-indexed)
+  const rows = order.map(i=>{
+    const s = sessions[i];
+    return `<tr><td>${s.tag.slice(0,3)}</td><td>${s.name}</td><td>${s.detail||''}</td></tr>`;
+  }).join('');
+
+  if(profile==='brett'){
+    document.getElementById('trainingContent').innerHTML = `
+      <p class="muted">5–6 days/week, ~45 min/session. Equipment: kettlebells, pull-up bar, push-up bars, skipping rope, road bike, sledgehammer + tyre (or heavy bag/log). No distance running — conditioning comes from wind sprints and dense circuits.</p>
+
+      <h3>Weekly Split</h3>
+      <table><tr><th>Day</th><th>Session</th><th>Focus</th></tr>${rows}</table>
+      <p class="muted">Phase 1: drop Thursday's session or make it easy — 5 days is plenty while habits form. From Phase 2 onward, all 6 sessions apply. Sunday is always off.</p>
+
+      <h3>Wind Sprints — the protocols (rotate these, no jogging)</h3>
+      <table>
+        <tr><th>Protocol</th><th>Format</th><th>Best on</th></tr>
+        <tr><td>Bike sprints</td><td>${SPRINT_PROTOCOLS[0].format}</td><td>Road bike</td></tr>
+        <tr><td>Tyre slams</td><td>${SPRINT_PROTOCOLS[1].format}</td><td>Sledgehammer</td></tr>
+        <tr><td>Rope bursts</td><td>${SPRINT_PROTOCOLS[2].format}</td><td>Skipping rope</td></tr>
+        <tr><td>Micro-sprints</td><td>${SPRINT_PROTOCOLS[3].format}</td><td>Road bike, Phase 1</td></tr>
+      </table>
+      <p class="muted">Total sprint work stays at 20–30 min including warm-up/cooldown. This is a real road bike, not a stationary trainer — pick a flat, low-traffic stretch (quiet road, park loop, or closed path) for the all-out efforts, wear a helmet, and stay aware of traffic. Evidence consistently shows short sprint intervals cut abdominal fat as well as or better than long steady cardio, in a fraction of the time.</p>
+
+      <h3>Sledgehammer / "Thor Hammer" Work</h3>
+      <p>This is your secret weapon for the 300-look: it builds explosive rotational core power, lat and grip strength, and doubles as brutal cardio (400–700 kcal/hr at high effort) — while being genuinely fun instead of another treadmill session.</p>
+      <ul>
+        <li>Overhead slams — 4 × 10-15 reps each side onto a tyre</li>
+        <li>Rotational strikes (alternating side-to-side) — builds the obliques that make the "300" V-taper</li>
+        <li>Figure-8 hammer pass — grip and shoulder stability</li>
+      </ul>
+
+      <h3>Kettlebell &amp; Bodyweight Staples</h3>
+      <div class="grid2">
+        <div class="tag badge-gold">Kettlebell swings</div>
+        <div class="tag badge-gold">Goblet squats</div>
+        <div class="tag badge-gold">Turkish get-ups</div>
+        <div class="tag badge-gold">Single-arm snatch</div>
+        <div class="tag badge-gold">Rack carries</div>
+        <div class="tag badge-red">Pull-ups / negatives</div>
+        <div class="tag badge-red">Push-up variations (deficit, archer)</div>
+        <div class="tag badge-red">Hanging leg raises</div>
+      </div>
+
+      <h3>Progression Rule</h3>
+      <p class="muted">Add reps before you add weight; add weight before you add sets. If a session leaves you unable to hold form on the last set, that's the ceiling for two more weeks. Deload (halve the volume) every 6th week automatically — it's built into the phase transitions above.</p>
+
+      <h3>Equipment worth buying (optional)</h3>
+      <p class="muted">You don't need a gym, but these unlock a lot for not much money: a second, heavier kettlebell (so you have a light + heavy pair for supersets), a set of gymnastic rings for the pull-up bar (adds huge variety), a heart-rate strap/watch or bike computer to keep sprint intensity honest, and a cheap tyre if you don't already have one for the hammer.</p>
+    `;
+  } else {
+    document.getElementById('trainingContent').innerHTML = `
+      <p class="muted">5–6 days/week, ~30–45 min/session. Equipment: kettlebells, pull-up bar, push-up bars, skipping rope, and the road for running. Casual-pace running replaces sprint/hammer conditioning — no pace pressure, just consistent easy miles.</p>
+
+      <h3>Weekly Split</h3>
+      <table><tr><th>Day</th><th>Session</th><th>Focus</th></tr>${rows}</table>
+      <p class="muted">Phase 1: drop Thursday's run or keep it short — 5 days is plenty while habits form. From Phase 2 onward, all 6 sessions apply. Sunday is always off.</p>
+
+      <h3>Easy Running Guidelines</h3>
+      <table>
+        <tr><th>Session</th><th>Pace/Effort</th><th>Notes</th></tr>
+        <tr><td>Easy Road Run</td><td>Conversational (RPE 3–4/10)</td><td>You should be able to talk in full sentences</td></tr>
+        <tr><td>Steady Road Run</td><td>Comfortably steady (RPE 4–5/10)</td><td>A touch firmer, still controlled</td></tr>
+        <tr><td>Long Casual Run</td><td>Relaxed, whatever pace feels good</td><td>This is about time on feet, not speed</td></tr>
+      </table>
+      <p class="muted">Increase duration gradually — add 5 minutes every couple of weeks if it feels good, rather than chasing pace. Comfortable, broken-in running shoes matter more than any gadget. Face oncoming traffic where there's no pavement, wear light or reflective gear in low light, and vary your routes to keep it enjoyable.</p>
+
+      <h3>Kettlebell &amp; Bodyweight Staples (shared strength days)</h3>
+      <div class="grid2">
+        <div class="tag badge-gold">Kettlebell swings</div>
+        <div class="tag badge-gold">Goblet squats</div>
+        <div class="tag badge-gold">Turkish get-ups</div>
+        <div class="tag badge-gold">Single-arm snatch</div>
+        <div class="tag badge-gold">Rack carries</div>
+        <div class="tag badge-red">Pull-ups / negatives</div>
+        <div class="tag badge-red">Push-up variations (deficit, archer)</div>
+        <div class="tag badge-red">Hanging leg raises</div>
+      </div>
+
+      <h3>Progression Rule</h3>
+      <p class="muted">Strength days: add reps before you add weight; add weight before you add sets. Running days: add time before you add pace. Deload (easier week) every 6th week automatically — it's built into the phase transitions above.</p>
+
+      <h3>Equipment worth buying (optional)</h3>
+      <p class="muted">A proper pair of running shoes fitted for your gait is the one worth spending on. After that: a cheap running belt or armband for your phone, and a basic GPS watch if you want to track distance — entirely optional, since pace pressure isn't the point here.</p>
+    `;
+  }
+}
+function renderCheckinOptions(){
+  const sessions = WEEKDAY_SESSIONS_BY_PROFILE[getActiveProfile()];
+  const names = [...new Set(sessions.map(s=>s.name))].filter(n=>n!=='Rest / Active Recovery');
+  const select = document.getElementById('ciSession');
+  const current = select.value;
+  select.innerHTML = ['Rest day', ...names, 'Other / missed'].map(n=>`<option>${n}</option>`).join('');
+  if([...select.options].some(o=>o.value===current)) select.value = current;
+}
+
+function renderShopping(){
+  const today = todayLocal();
+  const days = [];
+  for(let i=0;i<7;i++){
+    const d = new Date(today.getTime() + i*86400000);
+    const dayNum = Math.max(daysBetween(PROGRAM_START, d)+1, 1);
+    const meal1 = MEAL1_IDEAS[dayNum % MEAL1_IDEAS.length];
+    const meal2 = MEAL2_IDEAS[dayNum % MEAL2_IDEAS.length];
+    const label = i===0 ? 'Today' : i===1 ? 'Tomorrow' : d.toLocaleDateString('en-GB',{weekday:'short', day:'numeric', month:'short'});
+    days.push({label, meal1, meal2});
+  }
+
+  const tbody = document.querySelector('#weekMealsTable tbody');
+  tbody.innerHTML = days.map(d=>`<tr><td>${d.label}</td><td>${d.meal1.name}</td><td>${d.meal2.name}</td></tr>`).join('');
+
+  const tally = {};
+  days.forEach(d=>{
+    [...d.meal1.ingredients, ...d.meal2.ingredients].forEach(ing=>{
+      const key = ing.name;
+      if(!tally[key]) tally[key] = {cat:ing.cat, count:0};
+      tally[key].count++;
+    });
+  });
+
+  const byCat = {};
+  Object.keys(tally).forEach(name=>{
+    const cat = tally[name].cat;
+    if(!byCat[cat]) byCat[cat] = [];
+    byCat[cat].push({name, count:tally[name].count});
+  });
+
+  let html = '';
+  CATEGORY_ORDER.forEach(cat=>{
+    if(!byCat[cat]) return;
+    html += `<div class="shop-cat"><h4>${CATEGORY_LABELS[cat]}</h4>`;
+    byCat[cat].sort((a,b)=>a.name.localeCompare(b.name)).forEach(item=>{
+      html += `<div class="shop-item"><span class="box">☐</span><span>${item.name}</span>${item.count>1?`<span class="count">×${item.count}</span>`:''}</div>`;
+    });
+    html += `</div>`;
+  });
+  document.getElementById('shoppingListContent').innerHTML = html;
+}
+
+function renderNutrition(){
+  const t = computeNutritionTargets();
+  document.getElementById('nutritionCalc').innerHTML = `
+    <table>
+      <tr><th></th><th>Training day</th><th>Rest day</th></tr>
+      <tr><td>Calories</td><td>~${t.trainDay} kcal</td><td>~${t.restDay} kcal</td></tr>
+      <tr><td>Protein</td><td colspan="2">${t.proteinLow}–${t.proteinHigh} g/day (constant every day)</td></tr>
+      <tr><td>Carbs</td><td>Higher — fuel the session</td><td>Lower — veg-based, minimal starch</td></tr>
+      <tr><td>Fat</td><td>Moderate</td><td>Slightly higher to fill calories</td></tr>
+    </table>
+    <p class="muted">Recalculates from the weight you enter on the Dashboard tab — currently showing ${PROFILES[getActiveProfile()].label}'s targets.</p>
+  `;
+}
+
+// Tabs
+document.querySelectorAll('nav button').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    document.querySelectorAll('nav button').forEach(b=>b.classList.remove('active'));
+    document.querySelectorAll('section').forEach(s=>s.classList.remove('active'));
+    btn.classList.add('active');
+    document.getElementById(btn.dataset.tab).classList.add('active');
+    if(btn.dataset.tab==='progress') renderChart();
+    if(btn.dataset.tab==='shopping') renderShopping();
+  });
+});
+
+document.getElementById('curWeight').addEventListener('input',()=>{
+  localStorage.setItem(weightStorageKey(), document.getElementById('curWeight').value);
+  renderRateNote();renderNutrition();renderToday();
+});
+document.getElementById('goalWeight').addEventListener('input',()=>{
+  localStorage.setItem(goalStorageKey(), document.getElementById('goalWeight').value);
+  renderRateNote();
+});
+
+// Check-ins (localStorage, namespaced per profile)
+function loadCheckins(){
+  return JSON.parse(localStorage.getItem(checkinsStorageKey())||'[]');
+}
+function saveCheckins(arr){
+  localStorage.setItem(checkinsStorageKey(), JSON.stringify(arr));
+}
+function saveCheckin(){
+  const date = document.getElementById('ciDate').value || new Date().toISOString().slice(0,10);
+  const entry = {
+    date,
+    weight: document.getElementById('ciWeight').value,
+    sleep: document.getElementById('ciSleep').value,
+    energy: document.getElementById('ciEnergy').value,
+    session: document.getElementById('ciSession').value,
+    meals: document.getElementById('ciMeals').value,
+    notes: document.getElementById('ciNotes').value
+  };
+  let arr = loadCheckins().filter(e=>e.date!==date);
+  arr.push(entry);
+  arr.sort((a,b)=>a.date.localeCompare(b.date));
+  saveCheckins(arr);
+  renderHistory();
+  renderStreak();
+  document.getElementById('ciNotes').value='';
+  document.getElementById('ciWeight').value='';
+}
+function deleteCheckin(date){
+  saveCheckins(loadCheckins().filter(e=>e.date!==date));
+  renderHistory();
+  renderStreak();
+}
+function renderHistory(){
+  const arr = loadCheckins().slice().reverse();
+  const tbody = document.querySelector('#histTable tbody');
+  tbody.innerHTML = arr.map(e=>`
+    <tr class="hist-row">
+      <td>${e.date}</td><td>${e.weight||'-'}</td><td>${e.sleep||'-'}</td><td>${e.energy||'-'}</td>
+      <td>${e.session}</td><td>${e.meals}</td>
+      <td><button onclick="deleteCheckin('${e.date}')">✕</button></td>
+    </tr>`).join('') || '<tr><td colspan="7" class="muted">No check-ins yet.</td></tr>';
+}
+function renderStreak(){
+  const arr = loadCheckins().map(e=>e.date).sort();
+  if(arr.length===0){document.getElementById('streakNum').textContent='0 days';return;}
+  let streak=1;
+  for(let i=arr.length-1;i>0;i--){
+    const d1=new Date(arr[i]), d2=new Date(arr[i-1]);
+    if(daysBetween(d2,d1)===1) streak++; else break;
+  }
+  document.getElementById('streakNum').textContent = streak+' day'+(streak===1?'':'s');
+}
+function renderChart(){
+  const canvas = document.getElementById('chart');
+  const ctx = canvas.getContext('2d');
+  const dpr = window.devicePixelRatio||1;
+  const rect = canvas.getBoundingClientRect();
+  canvas.width = rect.width*dpr; canvas.height = 220*dpr;
+  ctx.scale(dpr,dpr);
+  ctx.clearRect(0,0,rect.width,220);
+  const data = loadCheckins().filter(e=>e.weight).map(e=>({date:e.date,w:parseFloat(e.weight)}));
+  const goal = parseFloat(document.getElementById('goalWeight').value)||80;
+  document.getElementById('snapshot').innerHTML = `
+    <p>Entries logged: <b>${loadCheckins().length}</b></p>
+    <p>Starting weight: <b>${document.getElementById('curWeight').value||87} kg</b> &nbsp;→&nbsp; Goal: <b>${goal} kg</b></p>
+    <p>Latest logged weight: <b>${data.length? data[data.length-1].w+' kg':'—'}</b></p>
+  `;
+  if(data.length<2){
+    ctx.fillStyle = '#9aa0ac'; ctx.font='13px sans-serif';
+    ctx.fillText('Log at least 2 weigh-ins to see your trend line here.', 16, 110);
+    return;
+  }
+  const pad=30;
+  const ws = data.map(d=>d.w);
+  const min = Math.min(...ws, goal)-1, max = Math.max(...ws, goal)+1;
+  const xStep = (rect.width-pad*2)/(data.length-1);
+  function yPos(w){ return 220-pad - ((w-min)/(max-min))*(220-pad*2); }
+  // goal line
+  ctx.strokeStyle='#d4a94c'; ctx.setLineDash([5,4]); ctx.beginPath();
+  ctx.moveTo(pad, yPos(goal)); ctx.lineTo(rect.width-pad, yPos(goal)); ctx.stroke();
+  ctx.setLineDash([]);
+  ctx.fillStyle='#d4a94c'; ctx.font='11px sans-serif'; ctx.fillText('Goal', rect.width-pad-30, yPos(goal)-6);
+  // weight line
+  ctx.strokeStyle='#c0392b'; ctx.lineWidth=2; ctx.beginPath();
+  data.forEach((d,i)=>{
+    const x = pad+i*xStep, y = yPos(d.w);
+    if(i===0) ctx.moveTo(x,y); else ctx.lineTo(x,y);
+  });
+  ctx.stroke();
+  data.forEach((d,i)=>{
+    const x = pad+i*xStep, y = yPos(d.w);
+    ctx.fillStyle='#e8e6e1'; ctx.beginPath(); ctx.arc(x,y,3,0,7); ctx.fill();
+  });
+}
+
+// init
+migrateLegacyData();
+document.getElementById('ciDate').value = new Date().toISOString().slice(0,10);
+document.getElementById('curWeight').value = loadStoredWeight();
+document.getElementById('goalWeight').value = loadStoredGoal();
+renderAll();
+setInterval(renderCountdown, 3600000);
+</script>
+</body>
+</html>
